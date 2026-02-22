@@ -39,8 +39,6 @@ Contains processed CSV files used to generate Figures 5 and 6.
 - `1ns_Comparative/`
   - Equivalent metrics for DUSP15 and DUSP7 under identical simulation conditions.
 
-For the comparative simulations, statistical summaries reported in the manuscript were calculated over the final 200 ps (800–1000 ps) of each 1-ns trajectory to minimize potential equilibration effects.
-
 ---
 
 ## Software and Force Field
