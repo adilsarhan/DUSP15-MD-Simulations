@@ -1,0 +1,36 @@
+define          = -DPOSRES
+integrator      = md
+dt              = 0.002
+nsteps          = 250000        ; 500 ps
+
+nstxout         = 0
+nstvout         = 0
+nstfout         = 0
+nstxout-compressed = 2500       ; every 5 ps
+nstenergy       = 2500
+nstlog          = 2500
+
+continuation    = no
+constraint_algorithm = lincs
+constraints     = h-bonds
+lincs_iter      = 1
+lincs_order     = 4
+
+cutoff-scheme   = Verlet
+nstlist         = 20
+rcoulomb        = 1.0
+rvdw            = 1.0
+coulombtype     = PME
+vdwtype         = Cut-off
+pbc             = xyz
+
+tcoupl          = v-rescale
+tc-grps         = Protein Non-Protein
+tau_t           = 0.1     0.1
+ref_t           = 300     300
+
+pcoupl          = no
+
+gen_vel         = yes
+gen_temp        = 300
+gen_seed        = -1
